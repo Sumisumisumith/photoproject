@@ -1,0 +1,24 @@
+<!-- search ＆ sort -->
+<section class="py-0 text-center container">
+  <div class="row py-lg-2">
+    <div class="col-lg-6 col-md-8 mx-auto">
+
+      <!-- search -->
+      <form class="d-flex" action="{% url 'photo:index' %}" method="get">
+        <input name="q" class="form-control me-2" type="search" placeholder="Search title or contents">
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+      </form>
+      <br>
+
+      <!-- Category sort-->
+      <details class="btn btn-light" style="border:1px solid">
+        <summary><strong>Category List</strong></summary>
+        <button class="btn btn-outline-secondary" onclick="location.href='{% url 'photo:index' %}'">All</button>
+        <button class="btn btn-outline-secondary" onclick="location.href='{% url 'photo:photos_cat' category=19 %}'">Practice</button>
+        <button class="btn btn-outline-secondary" onclick="location.href='{% url 'photo:photos_cat' category=20 %}'">Game</button>
+        <button class="btn btn-outline-secondary" onclick="location.href='{% url 'photo:photos_cat' category=8 %}'">Other</button>
+      </details>
+    </div>
+  </div>
+  <br><hr>
+</section>

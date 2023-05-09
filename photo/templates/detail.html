@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block title %}Photo Detail{% endblock %}
+
+{% block contents %}
+    <!--bootstrapのグリッドシステム-->
+    <div class="container">
+
+        <!--行を配置-->
+        <div class="row">
+
+            <!--写真-->
+            <div class="splide" role="group">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide"><img src="{{ object.image1.url }}"></div>
+                        {% if object.image2 %}
+                        <div class="splide__slide"><img src="{{ object.image2.url }}"></div>
+                        {% endif %}
+                        {% if object.image3 %}
+                        <div class="splide__slide"><img src="{{ object.image3.url }}"></div>
+                        {% endif %}
+                        {% if object.image4 %}
+                        <div class="splide__slide"><img src="{{ object.image4.url }}"></div>
+                        {% endif %}
+                        {% if object.image5 %}
+                        <div class="splide__slide"><img src="{{ object.image5.url }}"></div>
+                        {% endif %}
+                        {% if object.image6 %}
+                        <div class="splide__slide"><img src="{{ object.image6.url }}"></div>
+                        {% endif %}
+                        {% if object.image7 %}
+                        <div class="splide__slide"><img src="{{ object.image7.url }}"></div>
+                        {% endif %}
+                        {% if object.image8 %}
+                        <div class="splide__slide"><img src="{{ object.image8.url }}"></div>
+                        {% endif %}
+                        {% if object.image9 %}
+                        <div class="splide__slide"><img src="{{ object.image9.url }}"></div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <!--列の左右に余白offset-3を入れる-->
+            <div class='col offset-1'>
+                <br>
+                <!--タイトル-->
+                <h2>{{ object.title }}</h2>
+
+                <!--コメント-->
+                <p>{{ object.comment | linebreaksbr }}</p>
+                <br>
+                <!--投稿日時-->
+                <p>Posted at {{ object.posted_at }}</p>
+
+                <!--ユーザー自身のページの場合、投稿修正&削除できるように設定-->
+                {% if request.user == object.user %}
+                <form method='POST'>
+                    <!--投稿編集ボタン-->
+                    <a href="{% url 'photo:photo_update' object.pk %}" class="btn btn-primary my-2">Update</a>
+                    <!--投稿削除ボタン-->
+                    <a href="{% url 'photo:photo_delete' object.pk %}" class="btn btn-danger my-2">Delete</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

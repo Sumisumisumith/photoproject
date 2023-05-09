@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Post Success{% endblock %}
+
+{% block contents %}
+<br>
+<div class="container" style="text-align:center;">
+    <div class="row">
+        <div class="col offset-0">
+            <h4>Post Success!</h4>
+            <br><br>
+            <button class="btn btn-primary" onclick="location.href='{% url 'photo:mypage' %}'">Continue</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
