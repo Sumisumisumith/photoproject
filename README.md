@@ -17,9 +17,7 @@ python Djangoを用いてwebアプリケーションの開発を実践する．
 省略
 
 ## 4. 内容
- https://traininglab.pythonanywhere.com/
-- 画像
-- 機能一覧
+機能一覧
 - 
 - 
 - 
