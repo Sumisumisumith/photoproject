@@ -1,5 +1,6 @@
 # サッカー練習共有アプリ「Training Lab」
 https://traininglab.pythonanywhere.com/
+<img width="400" alt="" src=""> 
 
 ## 1. 概要
 python Djangoを用いてwebアプリケーションの開発を実践する．  
