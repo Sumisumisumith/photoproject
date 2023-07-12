@@ -2,7 +2,7 @@
 - https://traininglab.pythonanywhere.com/
 <br>
 
-<img width="400" hight="200" alt="login" src="messageImage_1689185182680.jpg"><img width="400" hight="200" alt="logout" src="/messageImage_1689185111166.jpg">
+<img width="400" height="200" alt="login" src="messageImage_1689185182680.jpg"><img width="400" height="200" alt="logout" src="/messageImage_1689185111166.jpg">
 
 ## 1. 概要
 python Djangoを用いてwebアプリケーションの開発を実践する．  
