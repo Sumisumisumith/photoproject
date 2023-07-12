@@ -2,7 +2,8 @@
 https://traininglab.pythonanywhere.com/
 
 ## 1. 概要
-python Djangoを用いてwebアプリケーションの開発を実践する．サッカーコーチをしているが、コーチ間の練習内容や指導内容などの情報共有が不足していることを課題と感じ、当アプリ開発に至る．
+python Djangoを用いてwebアプリケーションの開発を実践する．  
+サッカーコーチをしているが、コーチ間の練習内容や指導内容などの情報共有が不足していることを課題と感じ、当アプリ開発に至る．
 
 ## 2. 環境
 - 使用言語：python
@@ -11,11 +12,11 @@ python Djangoを用いてwebアプリケーションの開発を実践する．�
 - サーバー：pythonanywhere
 
 ## 3. システム構成
-以下システム構成図である．<br>
+以下システム構成図である.  
 省略
 
 ## 4. 内容
-- https://traininglab.pythonanywhere.com/
+ https://traininglab.pythonanywhere.com/
 - 画像
 - 機能一覧
 - 1．
