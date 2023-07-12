@@ -1,10 +1,10 @@
 # サッカー練習共有アプリ「Training Lab」
 https://traininglab.pythonanywhere.com/
-<img width="400" alt="" src=""> 
+<img width="400" alt="logout" src=""> <img width="400" alt="login" src=""> 
 
 ## 1. 概要
 python Djangoを用いてwebアプリケーションの開発を実践する．  
-サッカーコーチをしているが、コーチ間の練習内容や指導内容などの情報共有が不足していることを課題と感じ、当アプリ開発に至る．
+サッカーコーチをしている中、コーチ間の練習内容や指導内容などの情報共有が不足していることに課題を感じ、サッカー練習共有アプリ「Training Lab」を開発．
 
 ## 2. 環境
 - 使用言語：python
